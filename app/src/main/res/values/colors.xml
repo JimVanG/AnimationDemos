@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Colors for the Sunset Activity !-->
+
+    <color name="sun_bright">#fcfcb7</color>
+    <color name="sky_blue">#1e7ac7</color>
+    <color name="sky_sunset">#ec8100</color>
+    <color name="sky_night">#05192e</color>
+    <color name="sea">#224869</color>
+
+</resources>
