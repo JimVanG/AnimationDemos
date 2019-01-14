@@ -12,17 +12,19 @@ public class MainActivity extends AppCompatActivity
     View sceneView;
     View sunView;
     View skyView;
+    View seaView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sunset);
 
         sceneView = (ViewGroup) ((ViewGroup)
                 findViewById(android.R.id.content)).getChildAt(0);
         sunView = findViewById(R.id.sun);
         skyView = findViewById(R.id.sky);
+        seaView = findViewById(R.id.sea);
 
         // run the animation every time the screen is touched
         sceneView.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity
     void startAnimation()
     {
         float sunYStart = sunView.getTop();
-        float sunYEnd = skyView.getHeight();
+        float sunYEnd = seaView.getTop() - sunView.getHeight() / 2;
 
         ObjectAnimator heightAnimator = ObjectAnimator.
                 ofFloat(sunView, "y", sunYStart, sunYEnd).
